@@ -1,0 +1,8 @@
+[package]
+name = "typewriter"
+version = "0.1.0"
+authors = ["Will Ruman <will.ruman@penton.com>"]
+
+[dependencies]
+time = "0.1.36"
+
