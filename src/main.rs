@@ -1,5 +1,5 @@
 use std::{thread, time};
-use std::io::Write;
+use std::io::{stdout, Write};
 
 fn main() {
     let msg = "Computers are like any other machine. They're either a benefit or a hazard. If they're a benefit, it's not my problem";
@@ -8,7 +8,7 @@ fn main() {
     for c in msg.chars() {
         print!("{}", c);
         // stdout is normally line buffered, so explicit flush is needed for typing effect
-        match std::io::stdout().flush() {
+        match stdout().flush() {
             Ok(val) => val,
             Err(_) => {
                 println!("Could not flush stdout");
@@ -20,4 +20,5 @@ fn main() {
             _ => thread::sleep(split_sec),
         }
     }
+    println!();
 }
