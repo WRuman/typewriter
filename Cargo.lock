@@ -1,10 +1,3 @@
-[root]
-name = "typewriter"
-version = "0.1.0"
-dependencies = [
- "time 0.1.36 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
 [[package]]
 name = "kernel32-sys"
 version = "0.2.2"
@@ -33,6 +26,13 @@ dependencies = [
  "libc 0.2.21 (registry+https://github.com/rust-lang/crates.io-index)",
  "redox_syscall 0.1.17 (registry+https://github.com/rust-lang/crates.io-index)",
  "winapi 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "typewriter"
+version = "0.1.0"
+dependencies = [
+ "time 0.1.36 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
